@@ -21,7 +21,7 @@ shutt () {
 
 # Get fastest mirrors.
 echo -n -e " -> Syncing with fastest mirrors. \033[0K\r"
-(echo 'n' | pkg update 2>/dev/null) | while read -r line; do
+(pkg update 2>/dev/null) | while read -r line; do
     :
 done
 sleep 2
@@ -33,7 +33,9 @@ pkg install python && pip install pip wheel setuptools lolcat -U 2>/dev/null
 sleep 2
 
 # LOL
-echo "Wait... This isn't as beautiful as it should!"
+echo " "
+echo "Wait... This isn't as beautiful as it should!!!"
+echo " "
 sleep 3
 
 banner () {
@@ -138,4 +140,5 @@ if ! grep -lq "zsh" "$SHELL"; then
     clear
     exec zsh -l
 fi
+exit
 exit
