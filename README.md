@@ -21,17 +21,16 @@ A script to make my Termux experience more enjoyable.
 Installing this is as easy as running the command below in Termux.
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/HitaloSama/Hitmux/master/doc/install.sh)"
+bash -c "$(curl -fsSL https://git.io/JLNJj)"
 ```
 
 ## Screenshots
 
-![](https://raw.githubusercontent.com/HitaloSama/Hitmux/main/screenshots/1.png)
+![](https://raw.githubusercontent.com/HitaloSama/Hitmux/main/screenshots/1.jpg)
 
 ## Thanks to
 
  - [AvinashReddy3108](https://github.com/AvinashReddy3108/LitMux) for the base script.
  - [Cabbagec](https://github.com/Cabbagec) for his [termux-ohmyzsh](https://github.com/Cabbagec/termux-ohmyzsh) script.
  - The contributors of the [ZInit](https://github.com/zdharma/zinit) framework to maintain such an awesome project.
- - All of the color schemes are ported by me from [Gogh](https://github.com/Mayccoll/Gogh), they deserve their kudos.
  - [romkatv](https://github.com/romkatv) for the awesome [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme for ZSH.
