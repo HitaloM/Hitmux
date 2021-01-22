@@ -21,7 +21,7 @@ shutt () {
 
 # Get fastest mirrors.
 echo -n -e " -> Syncing with fastest mirrors. \033[0K\r"
-(pkg update 2>/dev/null) | while read -r line; do
+(pkg update -y 2>/dev/null) | while read -r line; do
     :
 done
 sleep 2
@@ -29,7 +29,7 @@ sleep 2
 # Upgrade packages.
 echo -n -e " -> Upgrading packages. \033[0K\r"
 pkg upgrade -y 2>/dev/null
-pkg install python && pip install pip wheel setuptools lolcat -U 2>/dev/null
+pkg install python -y && pip install pip wheel setuptools lolcat -U 2>/dev/null
 sleep 2
 
 # LOL
