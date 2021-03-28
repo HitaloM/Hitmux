@@ -50,7 +50,7 @@ banner
 # Updating package repositories and installing packages.
 echo -n -e " -> Installing required packages. \033[0K\r" | lolcat -a
 shutt apt update &>/dev/null
-shutt pkg install -y curl git zsh man 2>/dev/null
+shutt pkg install -y curl git zsh man fzf 2>/dev/null
 sleep 2
 
 # Installing SUDO.
@@ -95,6 +95,7 @@ cat <<'EOF' >> ~/.zshrc
 zinit wait lucid light-mode for \
   atinit"ZINIT[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay" \
       zdharma/fast-syntax-highlighting \
+      Aloxaf/fzf-tab \
       OMZ::plugins/colored-man-pages \
       OMZ::plugins/git \
   atload"!_zsh_autosuggest_start" \
